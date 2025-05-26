@@ -1,12 +1,12 @@
 ---
 permalink: /
-title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: "About Me"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-# About me
+I'm a Grade 10 student from [Shanghai Datong High School](https://dt.hpe.cn/). Hi!🎈
 
-I'm a Grade 10 student from Shanghai Datong High School. Hi!🎈
+My research interest includes math, physics, and computer science.
