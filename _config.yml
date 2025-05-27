@@ -25,7 +25,7 @@ author:
   avatar           : "AugustLight_Avatar.png"
   name             : "Xinyuan Mao"
   pronouns         : # example: "she/her"  
-  bio              : "Math for logic, physics for wonder, code for building things."
+  bio              : "Math fuels logic, Physics sparks wonder, Coding builds dreams."
   location         : "Shanghai, China"
   employer         : "Shanghai Datong High School"
   uri              : # URL
@@ -202,14 +202,10 @@ incremental: false
 
 # Markdown Processing
 kramdown:
-  syntax_highlighter_opts:
-    disable: true       # 禁用语法高亮器的特殊符号处理
   math_engine: mathjax
-  math_engine_opts:
-    skip_html_tags: ['script', 'noscript', 'style', 'textarea', 'pre']
-  auto_ids: false       # 避免标题ID生成干扰
   input: GFM
   hard_wrap: false
+  auto_ids: true
   footnote_nr: 1
   entity_output: as_char
   toc_levels: 1..6

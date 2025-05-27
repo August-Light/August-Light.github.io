@@ -2,8 +2,9 @@
 title: 'AP E&M Chapter 10 Electrostatics'
 date: 2025-05-09
 permalink: /posts/2025/05/AP-E_M-Chapter-10-Electrostatics/
+excerpt: 'Intro to E&M - Electrostatics.'
 tags:
-  - default
+  - AP Physics C E&M
 ---
 
 <!--Used $\ce{}$ to write units in formulas-->
@@ -13,12 +14,12 @@ tags:
 The magnitude of the **electrostatic force** (静电力) between to point charges (点电荷) $Q_1$ and $Q_2$ separated by a distance $R$ is given by the equation
 
 $$\boxed{
-    F = \frac {|Q_1| |Q_2|} {4 \pi \varepsilon_0 R^2}
+    F = \frac {\lvert Q_1 \rvert \lvert Q_2 \rvert} {4 \pi \varepsilon_0 R^2}
 }$$
 
 The direction of the force is along the line between the two charges. **Like charges repel**, while **unlike charges attract**.
 
-The constant $\varepsilon_0$ is called **the permittivity of free space** (真空介电常数 / 电常数), which is the constant ratio of $\frac {|Q_1| |Q_2|} {4 \pi R^2}$ to $F$.
+The constant $\varepsilon_0$ is called **the permittivity of free space** (真空介电常数 / 电常数), which is the constant ratio of $\frac {\lvert Q_1 \rvert \lvert Q_2 \rvert} {4 \pi R^2}$ to $F$.
 
 $$\varepsilon_0 \approx 8.85 \times 10^{-12} \ \ce{C^2/N\cdot m}$$
 
@@ -28,7 +29,7 @@ $4 \pi R^2$ in the denominator is the surface area of a sphere of radius $R$, wh
 An alternative form for this formula is:
 
 $$\boxed{
-    F = k \frac {|Q_1| |Q_2|} {R^2}
+    F = k \frac {\lvert Q_1 \rvert \lvert Q_2 \rvert} {R^2}
 }$$
 
 where $k = \frac 1 {4 \pi \varepsilon_0} \approx 8.99 \times 10^9 \ \ce{N\cdot m^2/C^2}$ is called the **electrostatic constant** (静电力常量), as an analog of $G$ in Newton's law of universal gravitation.
@@ -46,7 +47,7 @@ where $\vec{E}$ is called the **electric field** (电场).
 By Coulomb's Law, we can derive that the magnitude of an electric field due to a point charge $Q$ is
 
 $$\boxed{
-    E = \frac {|Q|} {4 \pi \varepsilon_0 R^2}
+    E = \frac {\lvert Q \rvert} {4 \pi \varepsilon_0 R^2}
 }$$
 
 (direction is away from positive point charges and toward negative point charges)
@@ -63,7 +64,7 @@ $$\boxed{
 
 ## Visualizing: Electric Field Lines
 
-> An electric field line is an imaginary line or curve drawn through a region of empty space so that **its tangent at any point is in the direction of the electric field vector at that point**. ([Electric Field Lines | Brilliant Math & Science Wiki](https://brilliant.org/wiki/electric-field-lines/))
+> An electric field line is an imaginary line or curve drawn through a region of empty space so that **its tangent at any point is in the direction of the electric field vector at that point**. ([Electric Field Lines - Brilliant Math & Science Wiki](https://brilliant.org/wiki/electric-field-lines/))
 
 - The lines represent the direction of the force.
 - The lines always begin on a positive charge and end on a negative charge.
