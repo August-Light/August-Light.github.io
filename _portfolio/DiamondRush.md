@@ -12,7 +12,7 @@ Diamond Rush is a grid-based game built using Python. This project is built 3 ye
 - Technology: Python (with Pygame library)
 - Target: Survive in periodic danger zones and collect $50$ diamonds
 
-<img src="../images/portfolio/diamond_rush.gif" width="270"/>
+<img src="/images/portfolio/diamond_rush.gif" width="270"/>
 
 # Game Mechanics
 
@@ -42,7 +42,7 @@ Furthermore, this is my very first time to build a complete project from scratch
 
 # Reflection
 
-The structure of code is too messy: too many global variables, low readability, and magic numbers appearing everywhere.  
+The structure of code is too messy: too many global variables, poor readability, and magic numbers appearing everywhere.  
 Looking back, I would now restructure the code with classes, encapsulate state management, and separate the behind logic from display functions.
 
 # Source Code
