@@ -116,4 +116,54 @@ Don't be surprised that we get negative answers for currents. In fact, it simply
 
 # RC Circuits
 
-TODO: Still working on it!
+<img src="https://i.ytimg.com/vi/3ZmScNqvGus/maxresdefault.jpg" width="500"/>
+
+## Charging a Capacitor
+
+When the switch is connected to **a**, the circuit is charging the capacitor.
+
+We can write the equation of Ohm's Law ($V = IR$) for this circuit:
+
+$$V - \frac Q C = \frac {dQ} {dt} R$$
+
+Solving the differential equation with initial condition $Q(0) = 0$, we derive
+
+$$\boxed{
+    Q(t) = Q_{\text{final}} (1 - e^{- \frac t {RC}})
+}$$
+
+where $Q_{\text{final}} = Q(\infty) = CV$.
+
+Take the derivative of $Q$ with respect to time, we can calculate the current:
+
+$$\boxed{
+    I(t) = I_0 e^{- \frac t {RC}}
+}$$
+
+where $I_0 = \frac V R$ is the initial current.
+
+## Discharging a Capacitor
+
+When the switch is connected to **b**, the circuit is discharging the capacitor.
+
+By the same process we can calculate the charge on the capacitor and the current through the capacitor:
+
+$$\boxed{
+    Q(t) = Q_0 e^{- \frac t {RC}}
+}$$
+
+$$\boxed{
+    I(t) = I_0 e^{- \frac t {RC}}
+}$$
+
+where $Q_0 = Q(0)$ is the initial charge and $I_0 = \frac Q {RC}$ is the initial current.
+
+## Time Constant for RC Circuits
+
+Note that $e^{- \frac t {RC}}$ appears in all those equations. Therefore, in order to simplify these equations, we define the time constant $\tau$ as:
+
+$$\boxed{
+    \tau = RC
+}$$
+
+and then these exponential terms become to $e^{- \frac t \tau}$.

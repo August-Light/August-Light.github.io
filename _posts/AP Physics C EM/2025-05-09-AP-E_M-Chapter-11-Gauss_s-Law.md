@@ -31,7 +31,7 @@ $$\boxed{
 
 $$\colorbox{#424242}{$
     \color{white}\boxed{
-    \Phi_{\text{electric}} = \oint \vec{E} \cdot d\vec{A} = \frac {Q_{\text{enclosed}}} {\varepsilon_0}
+        \Phi_{\text{electric}} = \oint \vec{E} \cdot d\vec{A} = \frac {Q_{\text{enclosed}}} {\varepsilon_0}
     }
 $}$$
 
