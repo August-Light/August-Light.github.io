@@ -9,56 +9,19 @@ redirect_from:
 
 {% include base_path %}
 
-Education
-======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+# Education
 
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+- High School Diploma (expected), **Shanghai Datong High School**, Shanghai, China, **2024-2027**
+  - Coursework: AP Calculus BC, AP Microeconomics, AP Macroeconomics, AP Computer Science A, AP Physics C: Mechanics
+- Middle School, **Shanghai Jing'an Education College Affiliated School**, Shanghai, China, **2020-2024**
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+# Honors and Awards
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+TODO:
 
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+- 2025.03 USACO 美国计算机奥林匹克竞赛铂金组
+-	2025.03 AIME 美国数学邀请赛 9分
+-	2024.12 NOIP 全国青少年信息学奥林匹克联赛 省一等奖
+-	CSP-S (Certified Software Professional Senior) - First Prize, *2024* <!--Nov-->
+-	2022.11 上海未来工程师大赛软件的诞生 3.0 一等奖
+-	2021.08 上海市音乐家协会 钢琴十级

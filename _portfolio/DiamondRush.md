@@ -1,12 +1,13 @@
 ---
-title: "Diamond Rush: A Python Grid-Based Survival Game"
-excerpt: "A grid-based game built using Python<br/><img src='/images/500x300.png'>"
+title: "Diamond Rush"
+excerpt: "A grid-based game built using Python<br/><img src='/images/portfolio/diamond_rush_cover.png'>"
 collection: portfolio
+date: 2025-06-06
 ---
 
 # Overview
 
-Diamond Rush is a grid-based game built using Python. This project is built 3 years ago as a learning experience and personal challenge. It's a milestone in my journey of programming.
+Diamond Rush is a grid-based game built using Python. This project is built in 2021 as a learning experience and personal challenge. It's a milestone in my journey of programming.
 
 - Platform: Desktop
 - Technology: Python (with Pygame library)
