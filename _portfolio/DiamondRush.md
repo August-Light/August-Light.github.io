@@ -1,8 +1,8 @@
 ---
 title: "Diamond Rush"
-excerpt: "A grid-based game built using Python<br/><img src='/images/portfolio/diamond_rush_cover.png'>"
+excerpt: "A grid-based game built using Python.<br/><br/><img src='/images/portfolio/diamond_rush_cover.png'>"
 collection: portfolio
-date: 2025-06-06
+date: 2021-10-02
 ---
 
 # Overview
