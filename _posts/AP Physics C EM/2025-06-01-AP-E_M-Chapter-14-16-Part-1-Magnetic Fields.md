@@ -19,15 +19,15 @@ A current-carrying wire is an aggregate of moving charges. Therefore, it can pro
 
 |  | Produce $\vec{B}$ | Respond to $\vec{B}$ |
 | :-: | :-: | :-: |
-| Moving Charge | $\vec{B} = \frac {\mu_0} {4\pi} \frac {\textcolor{yellow}{q \vec{v}} \times \hat{r}} {r^2}$ | $\vec{F} = \textcolor{yellow}{q \vec{v}}  \times \vec{B}$ |
-| Differential Length of Wire | $d\vec{B} = \frac {\mu_0} {4\pi} \frac {\textcolor{lightgreen}{I d\vec{l}} \times \hat{r}} {r^2}$ | $d\vec{F} = \textcolor{lightgreen}{I d\vec{l}} \times \vec{B}$ |
+| Moving Charge | $\vec{B} = \frac {\mu_0} {4\pi} \frac {\textcolor{goldenrod}{q \vec{v}} \times \hat{r}} {r^2}$ | $\vec{F} = \textcolor{goldenrod}{q \vec{v}}  \times \vec{B}$ |
+| Differential Length of Wire | $d\vec{B} = \frac {\mu_0} {4\pi} \frac {\textcolor{limegreen}{I d\vec{l}} \times \hat{r}} {r^2}$ | $d\vec{F} = \textcolor{limegreen}{I d\vec{l}} \times \vec{B}$ |
 
 I'll elaborate on these 4 formulas.
 
 ## Magnetic Field due to a Point Charge
 
 $$\boxed{
-    \vec{B} = \frac {\mu_0} {4\pi} \frac {\textcolor{yellow}{q \vec{v}} \times \hat{r}} {r^2}
+    \vec{B} = \frac {\mu_0} {4\pi} \frac {\textcolor{goldenrod}{q \vec{v}} \times \hat{r}} {r^2}
 }$$
 
 $\vec{r}$ is defined as a position vector pointing from the location of the charge to the location where the magnetic field is calculated. $\hat{r}$ is the unit vector at this direction.
@@ -45,7 +45,7 @@ where $\ce{T}$, **tesla**, is the unit for magnetic field.
 The magnetic force on a point charge is given by
 
 $$\boxed{
-    \vec{F} = \textcolor{yellow}{q \vec{v}}  \times \vec{B}
+    \vec{F} = \textcolor{goldenrod}{q \vec{v}}  \times \vec{B}
 }$$
 
 From this formula, we can say $1 \ce{T} = 1 \ce{N\cdot s/(C\cdot m)} = 1 \ce{N/(A\cdot m)}$.
@@ -62,7 +62,7 @@ $}$$
 
 ## Magnetic Field due to a Differential Length of Wire
 
-Because of the principle of superposition, we only need to calculate $\sum q\vec{v}$ in the wire and then plug it into the yellow part of $\vec{B} = \frac {\mu_0} {4\pi} \frac {\textcolor{yellow}{q \vec{v}} \times \hat{r}} {r^2}$.
+Because of the principle of superposition, we only need to calculate $\sum q\vec{v}$ in the wire and then plug it into the goldenrod part of $\vec{B} = \frac {\mu_0} {4\pi} \frac {\textcolor{goldenrod}{q \vec{v}} \times \hat{r}} {r^2}$.
 
 $$\begin{aligned}
     & \sum\limits_{i=1}^{dN} e\vec{v} \\
@@ -72,17 +72,17 @@ $$\begin{aligned}
 \end{aligned}$$
 
 $$\boxed{
-    d\vec{B} = \frac {\mu_0} {4\pi} \frac {\textcolor{lightgreen}{I d\vec{l}} \times \hat{r}} {r^2}
+    d\vec{B} = \frac {\mu_0} {4\pi} \frac {\textcolor{limegreen}{I d\vec{l}} \times \hat{r}} {r^2}
 }$$
 
-This formula is called the **Biot-Savart Law**. It's called a *law* because this formula was derived (by experiment and guess) earlier than $\vec{B} = \frac {\mu_0} {4\pi} \frac {\textcolor{yellow}{q \vec{v}} \times \hat{r}} {r^2}$.
+This formula is called the **Biot-Savart Law**. It's called a *law* because this formula was derived (by experiment and guess) earlier than $\vec{B} = \frac {\mu_0} {4\pi} \frac {\textcolor{goldenrod}{q \vec{v}} \times \hat{r}} {r^2}$.
 
 ## Magnetic Force on a Differential Length of Wire
 
 Through the same process, we can derive
 
 $$\boxed{
-    d\vec{F} = \textcolor{lightgreen}{I d\vec{l}} \times \vec{B}
+    d\vec{F} = \textcolor{limegreen}{I d\vec{l}} \times \vec{B}
 }$$
 
 # Gauss's Law for Magnetism
