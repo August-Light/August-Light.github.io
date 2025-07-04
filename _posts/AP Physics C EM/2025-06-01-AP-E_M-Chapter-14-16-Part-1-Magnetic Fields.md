@@ -62,7 +62,7 @@ $}$$
 
 ## Magnetic Field due to a Differential Length of Wire
 
-Because of the principle of superposition, we only need to calculate $\sum q\vec{v}$ in the wire and then plug it into the goldenrod part of $\vec{B} = \frac {\mu_0} {4\pi} \frac {\textcolor{goldenrod}{q \vec{v}} \times \hat{r}} {r^2}$.
+Because of the principle of superposition, we only need to calculate $\sum q\vec{v}$ in the wire and then plug it into the yellow part of $\vec{B} = \frac {\mu_0} {4\pi} \frac {\textcolor{goldenrod}{q \vec{v}} \times \hat{r}} {r^2}$.
 
 $$\begin{aligned}
     & \sum\limits_{i=1}^{dN} e\vec{v} \\
@@ -95,6 +95,35 @@ $}$$
 
 This formula is similar to Gauss's Law for Electricity. However, because there are no **magnetic monopoles (磁单极子)**, $\rho_{\text{mag}} = 0$. Therefore, this law is also called **Absence of magnetic monopoles (无磁单极子定律)**.
 
+## Example 14.1 Infinitely Long Wire
+
+> What is the magnetic field at the point $(−r, 0)$ caused by an infinitely long wire carrying a current $I$ along the $y$-axis in the $+\hat{j}$-direction?
+
+$$\begin{aligned}
+    dB_z &= \frac {\mu_0} {4\pi} \frac {I dl} {(r^2 + y^2)} \sin \theta \\
+    &= \frac {\mu_0} {4\pi} \frac {I dy} {(r^2 + y^2)} \frac r {\sqrt{r^2 + y^2}} \\
+    &= \frac {\mu_0} {4\pi} \frac {Ir} {(r^2 + y^2)^{\frac 3 2}} dy \\
+\end{aligned}$$
+
+$$\begin{aligned}
+    B &= \int dBa \\
+    &= \frac {\mu_0 I r} {4\pi} \int_{-\infty}^{+\infty} \frac 1 {(r^2 + y^2)^{\frac 3 2}} dy \\
+    &= \frac {\mu_0 I r} {4\pi} \int_{-\frac \pi 2}^{\frac \pi 2} \frac 1 {(r^2 + r^2 \tan^2 \theta)^{\frac 3 2}} (r \sec^2 \theta d\theta) & y = r \tan \theta \\
+    &= \frac {\mu_0 I} {4\pi r} \int_{-\frac \pi 2}^{\frac \pi 2} \cos\theta d\theta \\
+    &= \frac {\mu_0 I} {2\pi r} \\
+\end{aligned}$$
+
+$$\boxed{\vec{B} = \frac {\mu_0 I} {2\pi r} \hat{k}}$$
+
+## Example 14.2 The Force Between Parallel Wires
+
+> Given two infinitely long parallel wires lying on the $xy$-plane, what is the force per length exerted on wire 1 by wire 2?
+
+$$\begin{aligned}
+    \frac {F_{\text{on 1}}} l &= I_1 B \\
+    &= \frac {\mu_0 I_1 I_2} {2\pi r}
+\end{aligned}$$
+
 # Ampere’s law
 
 Ampere’s law is a restatement of the Biot-Savart law.
@@ -103,9 +132,20 @@ $$\boxed{
     \oint \vec{B} \cdot d\vec{l} = \mu_0 I_{\text{enclosed}}
 }$$
 
+It's a line integral. The positive direction of $I_{\text{enc}}$ is determined by the right-hand rule.
+
+Ampere's Law is not complete - it is only valid when an electric field is static. We will soon generalize it to Ampere-Maxwell law to deal with situations where this is not the case.
+
 I'm not gonna prove it because it's as complicated as Gauss's Law for Electricity 😒.
 
-## Example 1
+## Example 14.4
 
-TODO:
+> Solve Example 14.1 with Ampere's law.
 
+Use a circular Amperian path that lies in a plane perpendicular to the wire.
+
+$$\begin{aligned}
+    \oint \vec{B} \cdot d\vec{l} &= \mu_0 I_{\text{enc}} \\
+    (2\pi r) B &= \mu_0 I \\
+    B &= \frac {\mu_0 I} {2\pi r} \\
+\end{aligned}$$

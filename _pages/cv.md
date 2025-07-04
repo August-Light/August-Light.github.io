@@ -25,3 +25,7 @@ TODO:
 -	CSP-S (Certified Software Professional Senior) - First Prize, *2024* <!--Nov-->
 -	2022.11 上海未来工程师大赛软件的诞生 3.0 一等奖
 -	2021.08 上海市音乐家协会 钢琴十级
+
+# Courses
+
+<img src="https://coursera-certificate-images.s3.amazonaws.com/Z11TH73CFQTG" width="475"/>

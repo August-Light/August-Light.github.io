@@ -55,11 +55,15 @@ $$\colorbox{#424242}{$
     }
 $}$$
 
-The term $\varepsilon_0 \frac {\partial \Phi_E} {\partial t}$ is called **displacement current (位移电流)**. 
+The term $\varepsilon_0 \frac {\partial \Phi_E} {\partial t}$ is called **displacement current (位移电流)**.
 
-# Maxwell's Equations
+# Maxwell’s Equations
 
-TODO:
+Maxwell’s Equations are the four fundamental equations of electricity and magnetism:
+- **Gauss’s Law for Electricity**
+- **Gauss’s Law for Magnetism**
+- **Faraday’s Law**
+- **Ampere-Maxwell Law**
 
 $$\colorbox{#424242}{$
     \color{white}\boxed{
@@ -72,6 +76,8 @@ $$\colorbox{#424242}{$
     }
 $}$$
 
+💡This is the differential form of these four equations:
+
 $$\colorbox{#424242}{$
     \color{white}\boxed{
         \begin{cases}
@@ -83,8 +89,12 @@ $$\colorbox{#424242}{$
     }
 $}$$
 
+Combined with the Lorentz force formula, these 5 equations can explain every problem in electricity and magnetism.
+
 $$\colorbox{#424242}{$
     \color{white}\boxed{
         \vec{F} = q (\vec{E} + \vec{v} \times \vec{B})
     }
 $}$$
+
+With the discovery of Maxwell's equations, classical electromagnetism reached its end.

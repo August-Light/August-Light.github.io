@@ -89,7 +89,7 @@ The size of a hidden layer should be comparable to the size of the input (e.g. 1
 
 # Avoid Bugs in Code: Gradient Checking
 
-$$\frac \partial {\partial \Theta^{(l)}_{i,j}} \approx \frac {J(\cdots, \Theta^{(l)}_{i,j} + \varepsilon, \cdots) - J(\cdots, \Theta^{(l)}_{i,j} - \varepsilon, \cdots)} {2 \varepsilon}$$
+$$\frac \partial {\partial \Theta^{(l)}_{i,j}} J(\Theta) \approx \frac {J(\cdots, \Theta^{(l)}_{i,j} + \varepsilon, \cdots) - J(\cdots, \Theta^{(l)}_{i,j} - \varepsilon, \cdots)} {2 \varepsilon}$$
 
 Note: $\varepsilon = 10^{-4}$ is a reasonable value in practical.
 
