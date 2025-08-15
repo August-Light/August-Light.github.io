@@ -53,6 +53,12 @@ DFS 出四类边：树边、前向边、返祖边、横叉边。
 
 ## [Counting The Important Pairs](https://vjudge.net/problem/CodeChef-TAPAIR) (Hard)
 
+> 给定一个有 $n$ 个点 $m$ 条边的无向连通图，可以删掉两条边，问有多少种方案使得这个连通图不连通。
+>
+> $n,m \le 3 \times 10^5$。
+
+相同套路的问题：[P10778 BZOJ3569 DZY Loves Chinese II](https://www.luogu.com.cn/problem/P10778)
+
 随机化。
 
 对于每条非树边 $v \to u$ 随机一个权 $w$，把树上 $u \rightsquigarrow v$ 的边都 $\oplus w$。
