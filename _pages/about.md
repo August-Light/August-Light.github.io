@@ -2,13 +2,13 @@
 permalink: /
 title: "About Me"
 author_profile: true
-redirect_from: 
+redirect_from:
   - /about/
   - /about.html
 ---
 
-I'm a Grade 10 student from [Shanghai Datong High School](https://dt.hpe.cn/). Hi!🎈
+I'm a Grade 11 student from [Shanghai Datong High School](https://dt.hpe.cn/). Hi!🎈
 
 My research interest includes math, physics, and computer science.
 
-<img src="https://badges.toozhao.com/badges/01JW8ZTFJ00JCK6ZBJBQT28X39/green.svg" />
+The link for the GitHub Repo of this website is [GitHub Repo: August-Light.github.io](https://github.com/August-Light/August-Light.github.io).
