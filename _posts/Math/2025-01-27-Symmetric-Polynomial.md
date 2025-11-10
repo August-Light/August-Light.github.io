@@ -53,6 +53,8 @@ $$\begin{aligned}
 
 # 牛顿恒等式 Newton's Sums / Newton's identities
 
+TODO: 重写。
+
 令 $f(x) = \sum\limits_{i=0}^n a_i x^i$（$a_n = 1$），其 $n$ 个根为 $x_1, x_2, \cdots, x_n$。
 
 令 $P_k$ 为这 $n$ 个根的 $k$ 次方和 $\sum\limits_{i=1}^n x_i^k$。
