@@ -30,7 +30,7 @@
   - DP，设 $f_i$ 为所有以 $i$ 为右端点的区间的答案。
   - 分治。
 - 绝对众数
-  - **摩尔投票** [P2397 yyy loves Maths VI (mode)](https://www.luogu.com.cn/problem/P2397)
+  - **摩尔投票** [P2397 yyy loves Maths VI (mode) / 摩尔投票](https://www.luogu.com.cn/problem/P2397)
     - TODO:
   - 随机化。
     - TODO: [P3567 [POI 2014] KUR-Couriers](https://www.luogu.com.cn/problem/P3567)
