@@ -73,7 +73,7 @@
     int ptr = 1;
     rep(i, 1, nB) {
         l = R[i] + 1, r = R[i];
-        memset(c, 0, sizeof c), res = 0;
+        /*此处清空所有辅助信息*/ res = 0;
         for (; bel[q[ptr].l] == i; ptr++) {
             auto Q = q[ptr];
             if (bel[Q.l] == bel[Q.r]) {
