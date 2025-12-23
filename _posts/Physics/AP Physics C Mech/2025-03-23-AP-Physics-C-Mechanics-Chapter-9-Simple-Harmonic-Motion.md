@@ -187,7 +187,7 @@ Follow the same way in Solution 2 of Example 9.4:
 
 $$\begin{cases}
     \theta(1s) = A \sin \left( \sqrt{40} + \varphi \right) = 0.1 \\
-    \tau(1s) = A \cos \left( \sqrt{40} + \varphi \right) \times \sqrt{40} s^{-1} = 0.05 s^{-1} \\
+    \omega(1s) = A \cos \left( \sqrt{40} + \varphi \right) \times \sqrt{40} s^{-1} = 0.05 s^{-1} \\
 \end{cases}$$
 
 $$A = \frac {\sqrt{1610}} {400}$$

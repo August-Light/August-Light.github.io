@@ -106,7 +106,7 @@ $$\begin{aligned}
 \end{aligned}$$
 
 $$\begin{aligned}
-    B &= \int dBa \\
+    B &= \int dB_z \\
     &= \frac {\mu_0 I r} {4\pi} \int_{-\infty}^{+\infty} \frac 1 {(r^2 + y^2)^{\frac 3 2}} dy \\
     &= \frac {\mu_0 I r} {4\pi} \int_{-\frac \pi 2}^{\frac \pi 2} \frac 1 {(r^2 + r^2 \tan^2 \theta)^{\frac 3 2}} (r \sec^2 \theta d\theta) & y = r \tan \theta \\
     &= \frac {\mu_0 I} {4\pi r} \int_{-\frac \pi 2}^{\frac \pi 2} \cos\theta d\theta \\
