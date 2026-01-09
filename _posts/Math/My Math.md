@@ -1,10 +1,11 @@
 # Algebra
 
-- $\sqrt \cdot + \sqrt \cdot$
-  - 看到 $\sqrt {x^2 - a^2} + \sqrt {y^2 - a^2}$，构造高为 $a$ 的三角形。[2006 AIME II #15](https://artofproblemsolving.com/wiki/index.php?title=2006_AIME_II_Problems/Problem_15)
+- 根号的和差
+  - $\sqrt {x^2 - a^2} + \sqrt {y^2 - a^2}$：构造高为 $a$ 的三角形。[2006 AIME II #15](https://artofproblemsolving.com/wiki/index.php?title=2006_AIME_II_Problems/Problem_15)
+  - $\sqrt{x^2 + c} \pm x$：代入 $-x$ 使用平方差公式，可以得到 $f(x) f(-x) = c$ 的结构。
 - 二次曲线切线
   - 构造方程使 $\Delta = 0$。[2005 AIME II #15](https://artofproblemsolving.com/wiki/index.php?title=2005_AIME_II_Problems/Problem_15)
-  - 通法：求法向量，切线与法向量垂直，用点积刻画。
+  - 通法：把曲线方程写为 $F(x,y) = 0$，把曲线视为 $F$ 的等值线，求法向量（即梯度），切线与法向量垂直（点积为 $0$）。
 
 ## Conic Section
 
@@ -75,3 +76,19 @@
 - $\bmod$ 合数，尝试用 CRT 拆开。
 - 缩系
   - 任何数 $m$（$m \ne 2$）的缩系内所有元素求和在 $\bmod m$ 下一定是 $0$。
+
+## Diophantine Equation
+
+- Pell 方程 $x^2 - D y^2 = 1$ [2022 AMC12A #16](https://artofproblemsolving.com/wiki/index.php?title=2022_AMC_12A_Problems/Problem_16)
+  - 已知最小解 $(x_1, y_1)$ 时，通解 $(x_n, y_n)$ 由公式 $x_n + y_n \sqrt D = (x_1 + y_1 \sqrt D)^n$。
+    - 注意这是一个线性递推，写成矩阵会比较清楚。
+
+## Chicken Nugget
+
+TODO:
+
+# Sequence
+
+## Fibonacci
+
+TODO:
