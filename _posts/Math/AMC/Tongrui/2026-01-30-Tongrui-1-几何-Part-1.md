@@ -11,6 +11,14 @@ tags:
 
 # 公式 / 模型
 
+## 垂心与外接圆
+
+练习题：Example 1.16 [AIME I 2020 #15](https://artofproblemsolving.com/wiki/index.php?title=2020_AIME_I_Problems/Problem_15)
+
+**三角形垂心关于边的对称点在外接圆上**。证法是 $\angle BAC + \angle BHC = \pi$。
+
+<img src="https://cdn.luogu.com.cn/upload/image_hosting/qhiuytey.png" width=400>
+
 ## Stewart 定理
 
 > 根据 $b,c,m,n$，求出 $d$：
@@ -36,6 +44,53 @@ $$\boxed{
 }$$
 
 进一步思考，甚至可以得到 **Stewart 定理与质点系的平行轴定理等价**。对一个 $n$ 个点的质点系进行归纳，先把前 $n-1$ 个质点的质量等效在质心，将这个质心与第 $n$ 个质点使用 Stewart 定理即可。
+
+## 重心到三角形顶点距离平方和
+
+练习题：Example 5.22 [AIME I 2012 #14](https://artofproblemsolving.com/wiki/index.php?title=2012_AIME_I_Problems/Problem_14)
+
+在三角形 $ABC$ 中，重心为 $G$，则：
+
+$$\boxed{
+    GA^2 + GB^2 + GC^2 = \frac 1 3 (a^2 + b^2 + c^2)
+}$$
+
+对于一个任意点 $P$：
+
+$$\boxed{
+    PA^2 + PB^2 + PC^2 \ge \frac 1 3 (a^2 + b^2 + c^2)
+}$$
+
+取等当且仅当 $P$ 是重心 $G$。
+
+## 证明
+
+在 $A,B,C$ 处各放置一个质量为 $1$ 的质点。
+
+计算质心 $G$ 处转动惯量：
+
+$$I_G = GA^2 + GB^2 + GC^2$$
+
+使用三次平行轴定理：
+
+$$\begin{cases}
+    I_A = I_G + 3 GA^2 = b^2 + c^2 \\
+    I_B = I_G + 3 GB^2 = a^2 + c^2 \\
+    I_C = I_G + 3 GC^2 = a^2 + b^2 \\
+\end{cases}$$
+
+$$\begin{aligned}
+    6 (GA^2 + GB^2 + GC^2) &= 2 (a^2 + b^2 + c^2) \\
+    GA^2 + GB^2 + GC^2 &= \frac 1 3 (a^2 + b^2 + c^2)
+\end{aligned}$$
+
+得证。
+
+进一步地，对于任意一点 $P$，有
+
+$$PA^2 + PB^2 + PC^2 = I_P = I_G + 3 PG^2 \ge I_G$$
+
+取等当且仅当 $PG = 0$，即 $P$ 就是 $G$。
 
 ## Euler 定理与 Euler 不等式
 
@@ -78,13 +133,34 @@ $$\boxed{
 
 取等条件为 $OI = 0$，即三角形为等边三角形。
 
-## 垂心与外接圆
+## 反演变换
 
-练习题：Example 1.16 [AIME I 2020 #15](https://artofproblemsolving.com/wiki/index.php?title=2020_AIME_I_Problems/Problem_15)
+TODO:
 
-**三角形垂心关于边的对称点在外接圆上**。证法是 $\angle BAC + \angle BHC = \pi$。
+## Ptolemy 定理
 
-<img src="https://cdn.luogu.com.cn/upload/image_hosting/qhiuytey.png" width=400>
+TODO:
+
+不等式
+
+## 角元 Menelaus 与 Ceva 定理
+
+TODO:
+
+## 类似中线
+
+https://zhuanlan.zhihu.com/p/718821665
+
+https://zhuanlan.zhihu.com/p/407949882
+
+https://artofproblemsolving.com/wiki/index.php/Symmedians,_Lemoine_point?srsltid=AfmBOopx8IQ30O_iBz0GgDM5OzFk3waJO5dYipToSf5yJ00L8dV6YmaH
+
+[BMO2 2024 #3](https://bmos.ukmt.org.uk/home/bmo2-2024.pdf)
+
+https://bmos.ukmt.org.uk/solutions/bmo2-2024/
+
+
+TODO:
 
 # Example 1.5 [AIME II 2002 #14](https://artofproblemsolving.com/wiki/index.php?title=2002_AIME_II_Problems/Problem_14) (Normal)
 
@@ -167,7 +243,7 @@ TODO:
 
 此时 $PY$ 上的所有边都能算了。最后可以得到 $AB^2 = 37 \times 67 - 47^2 = \boxed{270}$。
 
-# Example 1.18 [AIME I 2009 #12](https://artofproblemsolving.com/wiki/index.php?title=2009_AIME_I_Problems/Problem_12)
+# Example 1.18 [AIME I 2009 #12](https://artofproblemsolving.com/wiki/index.php?title=2009_AIME_I_Problems/Problem_12) (Normal)
 
 TODO:
 
@@ -215,3 +291,15 @@ $$AC = a \sec2 \theta = 9a = \frac 9 2 BC$$
 ## 这个三角方程具体怎么解？
 
 TODO:
+
+# Example 1.20 (Hard)
+
+
+
+# Example 1.22 (Hard)
+
+
+# Example 1.23 (Hard)
+
+
+Example 1.24
