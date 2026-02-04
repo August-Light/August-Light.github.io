@@ -11,86 +11,11 @@ tags:
 
 # 公式 / 模型
 
-## 垂心与外接圆
-
-练习题：Example 1.16 [AIME I 2020 #15](https://artofproblemsolving.com/wiki/index.php?title=2020_AIME_I_Problems/Problem_15)
-
-**三角形垂心关于边的对称点在外接圆上**。证法是 $\angle BAC + \angle BHC = \pi$。
-
-<img src="https://cdn.luogu.com.cn/upload/image_hosting/qhiuytey.png" width=400>
-
-## Stewart 定理
-
-> 根据 $b,c,m,n$，求出 $d$：
->
-> <img src="https://cdn.luogu.com.cn/upload/image_hosting/j0ibegeu.png" width=450/>
-
-在点 $B$ 处放一个质量为 $n$ 的质点，在点 $C$ 处放一个质量为 $m$ 的质点。可以发现这个质点系的质心在 $D$。
-
-写出该质点系对质心的转动惯量：
-
-$$I_{CM} = m n^2 + m^2 n = mn(n+m)$$
-
-写出该质点系对 $A$ 的转动惯量：
-
-$$I = b^2 m + c^2 n$$
-
-对这两个转动惯量使用平行轴定理：
-
-$$I = I_{CM} + (m+n) d^2$$
-
-$$\boxed{
-    b^2 m + c^2 n = (m+n) (d^2 + mn)
-}$$
-
-进一步思考，甚至可以得到 **Stewart 定理与质点系的平行轴定理等价**。对一个 $n$ 个点的质点系进行归纳，先把前 $n-1$ 个质点的质量等效在质心，将这个质心与第 $n$ 个质点使用 Stewart 定理即可。
-
-## 重心到三角形顶点距离平方和
-
-练习题：Example 5.22 [AIME I 2012 #14](https://artofproblemsolving.com/wiki/index.php?title=2012_AIME_I_Problems/Problem_14)
-
-在三角形 $ABC$ 中，重心为 $G$，则：
-
-$$\boxed{
-    GA^2 + GB^2 + GC^2 = \frac 1 3 (a^2 + b^2 + c^2)
-}$$
-
-对于一个任意点 $P$：
-
-$$\boxed{
-    PA^2 + PB^2 + PC^2 \ge \frac 1 3 (a^2 + b^2 + c^2)
-}$$
-
-取等当且仅当 $P$ 是重心 $G$。
-
-## 证明
-
-在 $A,B,C$ 处各放置一个质量为 $1$ 的质点。
-
-计算质心 $G$ 处转动惯量：
-
-$$I_G = GA^2 + GB^2 + GC^2$$
-
-使用三次平行轴定理：
-
-$$\begin{cases}
-    I_A = I_G + 3 GA^2 = b^2 + c^2 \\
-    I_B = I_G + 3 GB^2 = a^2 + c^2 \\
-    I_C = I_G + 3 GC^2 = a^2 + b^2 \\
-\end{cases}$$
-
-$$\begin{aligned}
-    6 (GA^2 + GB^2 + GC^2) &= 2 (a^2 + b^2 + c^2) \\
-    GA^2 + GB^2 + GC^2 &= \frac 1 3 (a^2 + b^2 + c^2)
-\end{aligned}$$
-
-得证。
-
-进一步地，对于任意一点 $P$，有
-
-$$PA^2 + PB^2 + PC^2 = I_P = I_G + 3 PG^2 \ge I_G$$
-
-取等当且仅当 $PG = 0$，即 $P$ 就是 $G$。
+为了防止文章太长太卡，把很多点做成了单独的文章：
+- 转动惯量与几何 TODO:
+- 反演变换 TODO:
+- 类似中线 TODO:
+- 九点圆与 Euler 线 TODO:
 
 ## Euler 定理与 Euler 不等式
 
@@ -133,32 +58,7 @@ $$\boxed{
 
 取等条件为 $OI = 0$，即三角形为等边三角形。
 
-## 反演变换
-
-TODO:
-
-## Ptolemy 定理
-
-TODO:
-
-不等式
-
 ## 角元 Menelaus 与 Ceva 定理
-
-TODO:
-
-## 类似中线
-
-https://zhuanlan.zhihu.com/p/718821665
-
-https://zhuanlan.zhihu.com/p/407949882
-
-https://artofproblemsolving.com/wiki/index.php/Symmedians,_Lemoine_point?srsltid=AfmBOopx8IQ30O_iBz0GgDM5OzFk3waJO5dYipToSf5yJ00L8dV6YmaH
-
-[BMO2 2024 #3](https://bmos.ukmt.org.uk/home/bmo2-2024.pdf)
-
-https://bmos.ukmt.org.uk/solutions/bmo2-2024/
-
 
 TODO:
 
@@ -303,3 +203,30 @@ TODO:
 
 
 Example 1.24
+
+
+# Example 1.25 [AIME II 2012 #15](https://artofproblemsolving.com/wiki/index.php?title=2012_AIME_II_Problems/Problem_15)
+
+
+
+
+
+# Example 1.32 [AIME II 2002 #15](https://artofproblemsolving.com/wiki/index.php?title=2002_AIME_II_Problems/Problem_15) (Hard)
+
+评价为高考题
+
+# Example 1.34 [AIME I 2005 #14](https://artofproblemsolving.com/wiki/index.php?title=2005_AIME_I_Problems/Problem_14) (Normal)
+
+向量？？
+
+>
+
+# Example 1.35 [AIME I 2007 #12](https://artofproblemsolving.com/wiki/index.php?title=2007_AIME_I_Problems/Problem_12) (Normal)
+
+叉乘
+
+
+# Example 1.36 [AIME I 2010 #13](https://artofproblemsolving.com/wiki/index.php?title=2010_AIME_I_Problems/Problem_13) (Normal)
+
+加强：只知道 $AN$ 是代数数，不知道 $AN$ 的具体值。
+
