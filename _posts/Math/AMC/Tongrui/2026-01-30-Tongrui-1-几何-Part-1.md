@@ -12,8 +12,8 @@ tags:
 # 公式 / 模型
 
 为了防止文章太长太卡，把很多点做成了单独的文章：
-- 转动惯量与几何 TODO:
-- 反演变换 TODO:
+- [转动惯量与几何](https://august-light.github.io/posts/2026/02/2026-02-03-%E8%BD%AC%E5%8A%A8%E6%83%AF%E9%87%8F%E4%B8%8E%E5%87%A0%E4%BD%95/)
+- [反演变换](https://august-light.github.io/posts/2026/02/2026-02-04-%E5%8F%8D%E6%BC%94%E5%8F%98%E6%8D%A2/)
 - 类似中线 TODO:
 - 九点圆与 Euler 线 TODO:
 
@@ -230,3 +230,58 @@ Example 1.24
 
 加强：只知道 $AN$ 是代数数，不知道 $AN$ 的具体值。
 
+
+
+
+https://artofproblemsolving.com/wiki/index.php?title=2005_AIME_II_Problems/Problem_14
+
+https://artofproblemsolving.com/wiki/index.php?title=2012_AIME_I_Problems/Problem_13
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Example 1.52 [EGMO 2025 #3](https://www.egmo.org/egmos/egmo14/paper-day1-ChineseSimplified.pdf) (Lunatic)
+
+[答案文件](https://www.egmo.org/egmos/egmo14/solutions.pdf)
