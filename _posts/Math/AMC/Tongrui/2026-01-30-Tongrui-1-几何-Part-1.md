@@ -285,3 +285,22 @@ https://artofproblemsolving.com/wiki/index.php?title=2012_AIME_I_Problems/Proble
 # Example 1.52 [EGMO 2025 #3](https://www.egmo.org/egmos/egmo14/paper-day1-ChineseSimplified.pdf) (Lunatic)
 
 [答案文件](https://www.egmo.org/egmos/egmo14/solutions.pdf)
+
+# Example 1.57 [AIME II 2020 #13](https://artofproblemsolving.com/wiki/index.php?title=2020_AIME_II_Problems/Problem_13)
+
+> 凸五边形的五条边依次为 $5,6,6,6,7$，且有一个内切圆。求这个五边形的面积。
+
+首先可以算出每个顶点到相邻切点的距离。然后设半径为 $r$，可以列出方程：
+
+$$4 \arctan \frac 2 r + 4 \arctan \frac 4 r + 2 \arctan \frac 3 r = 2 \pi$$
+
+$$2 \arctan \frac 2 r + 2 \arctan \frac 4 r + \arctan \frac 3 r = \pi$$
+
+很容易想到用复数来解。这个方程的一个必要条件为
+
+$$\Im \left( (r + 2i)^2 (r + 4i)^2 (r + 3i) \right) = 0$$
+
+是一个关于 $r^2$ 的二次方程，解得 $r = 4$ 或 $r = \frac 2 {\sqrt 5}$。不等式夹一下大小，可得 $r = \frac 2 {\sqrt 5}$ 时等式右侧其实是 $2 \pi$ 而不是 $\pi$。因此只能是 $r = 4$。
+
+答案为 $\boxed{60}$。
+
