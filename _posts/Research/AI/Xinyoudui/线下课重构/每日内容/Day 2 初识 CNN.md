@@ -6,19 +6,15 @@ https://d2l.ai/chapter_convolutional-neural-networks/why-conv.html
 
 对于一个图像相关的任务，如果我们对整张图使用全连接层，我们需要的参数数量过大。也就是说，我们需要把普通的 NN 往图像相关问题特化。
 
-我们来看一个具体例子来寻找灵感。
+看一个具体例子来寻找灵感：
 
 > 国外一个很火的游戏：给定一张有很多很多人的图片，在里面找到 Waldo 这个人。
 >
 > <img src="https://compote.slate.com/images/da10c202-1283-4e22-9edf-a2a26f5880dc.jpg" width=400/>
 
-我们发现一个关键性质：**Waldo 的样子与 Waldo 所在的位置无关**，即 Waldo 的样子具有**平移不变性**。
+我们发现一个关键性质：**Waldo 的样子与 Waldo 所在的位置无关**，即 Waldo 的样子具有**平移不变性**。因此我们使用一个全局的大 NN 是愚蠢的，应该关注**局部**的信息。
 
-因此我们使用一个全局的大 NN 是愚蠢的，应该关注**局部**的信息。
-
-TODO:
-
-对于图片 $X$，它往隐藏层 $H$ 的转移被定义为一个卷积（严谨地说是 Cross-Correlation）：
+对于每一个像素，我们每次在往隐藏层转移时，都提取它附近一块的信息。对于图片 $X$，它往隐藏层 $H$ 的转移被定义为一个**卷积**（严谨地说是 Cross-Correlation）：
 
 $$H_{i,j} = U_{i,j} + \sum_{a \in [-\Delta, \Delta], b \in [-\Delta, \Delta]} V_{a,b} X_{i+a, j+b}$$
 
