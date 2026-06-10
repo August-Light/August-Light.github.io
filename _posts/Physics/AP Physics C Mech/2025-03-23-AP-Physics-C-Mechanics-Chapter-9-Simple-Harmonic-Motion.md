@@ -24,11 +24,11 @@ $$\frac {d^2 x} {dt^2} + b x = 0$$
 
 is
 
-$$x(t) = C_1 \sin(\sqrt b x) + C_2 \cos(\sqrt b x)$$
+$$x(t) = C_1 \sin(\sqrt b t) + C_2 \cos(\sqrt b t)$$
 
 which is equivalent to (for non trivial solutions)
 
-$$\boxed{x(t) = A \sin(\sqrt b x + \varphi)}$$
+$$\boxed{x(t) = A \sin(\sqrt b t + \varphi)}$$
 
 # SHM
 

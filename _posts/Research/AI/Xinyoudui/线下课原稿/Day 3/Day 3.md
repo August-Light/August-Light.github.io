@@ -33,6 +33,8 @@ https://d2l.ai/chapter_computer-vision/index.html
 
 ## Batch Normalization
 
+https://d2l.ai/chapter_convolutional-modern/batch-norm.html
+
 TODO:
 
 ## CNN 架构

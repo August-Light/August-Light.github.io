@@ -35,7 +35,7 @@ $$\begin{aligned}
     &= m v \Delta v + \frac 1 2 m (\Delta v)^2
 \end{aligned}$$
 
-$\Delta v$ 不变，$v$ 越大时 $\text{KE}$ 变化越大。而近日点是能量最大的位置。
+$\Delta v$ 不变，$v$ 越大时 $\text{KE}$ 变化越大。而近日点是 $v$ 最大的位置。
 
 # Tsiolkovsky 火箭方程
 
@@ -49,7 +49,7 @@ $$\Delta v = v_e \ln \frac {m_0} {m_f}$$
 
 ## 推导
 
-$dm$ 是火箭质量的减少（因此是负数），
+令 $dm$ 是火箭质量的减少量（因此是负数），列出动量守恒：
 
 $$\begin{aligned}
     mv &= (m + dm) (v + dv) + dm (v_e - v) \\

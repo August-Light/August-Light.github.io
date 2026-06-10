@@ -5,7 +5,6 @@
 ```py
 from torch.utils.data import Dataset
 
-# TODO: data 太泛泛而谈
 class MyDataset(Dataset):
     def __init__(self, data):
         self.data = data

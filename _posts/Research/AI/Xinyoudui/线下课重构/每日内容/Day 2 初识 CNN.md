@@ -1,8 +1,7 @@
 # 卷积
 
-https://d2l.ai/chapter_convolutional-neural-networks/index.html
-
-https://d2l.ai/chapter_convolutional-neural-networks/why-conv.html
+- [Convolutional Neural Networks](https://d2l.ai/chapter_convolutional-neural-networks/index.html)
+- [From Fully Connected Layers to Convolutions](https://d2l.ai/chapter_convolutional-neural-networks/why-conv.html)
 
 对于一个图像相关的任务，如果我们对整张图使用全连接层，我们需要的参数数量过大。也就是说，我们需要把普通的 NN 往图像相关问题特化。
 
@@ -26,15 +25,13 @@ $$(n_h - k_h + 1) \times (n_w - k_w + 1)$$
 
 ## Padding & Stride
 
-https://d2l.ai/chapter_convolutional-neural-networks/padding-and-strides.html
-
 不难发现，我们过卷积层时图像会变小，而且边缘的像素利用不足。
 
 我们可以在外圈补上一层厚度为 $p$ 的 $0$，然后再卷积。此处的 $p$ 被称为 padding。
 
-与此同时，卷积核一格一格走，对于某些情况来说计算量太大。我们可以让卷积核每次走 $s$ 格，此处的 $s$ 被称为 stride。这同时可以起到 downsampling 的作用。
+与此同时，卷积核一格一格走，对于某些情况来说计算量太大。我们可以让卷积核每次走 $s$ 格，此处的 $s$ 被称为 stride。
 
-输出尺寸计算公式：
+> 对于一条长度为 $n$ 的边，使用一个长度为 $k$ 的卷积核，使用 $p$ 的 padding 和 $s$ 的 stride，最后输出的尺寸是？
 
 $$\boxed{
     \left\lfloor \frac {n + 2p - k} s \right\rfloor + 1
@@ -56,15 +53,71 @@ $$H_{i,j,d} = U_{i,j,d} + \sum_{a \in [-\Delta, \Delta], b \in [-\Delta, \Delta]
 
 # 池化
 
-TODO:
+但是只识别过于局部的特征也不对。比如我们要识别 Waldo，但是每个神经元要么只能看到 Waldo 的脸要么只能看到 Waldo 的衣服，没有办法看到更大的结构。
 
-池化在不够的时候也会直接丢弃。
+我们可以具体定义一下“神经元看到的区域”。我们称神经元的**感受野 (receptive field)** 为神经元依赖原图的区域大小。e.g. 原图经过一个卷积核大小为 $3 \times 3$ 的卷积层后，每个神经元的感受野即为 $3 \times 3$。
 
-# 实践：MNIST
+不断地叠卷积层来增加感受野有点蠢。我们可以考虑“模糊原图”：把图片上每 $k \times k$ 分一大格，每一格内取最大值作为代表元素：
 
-https://www.kaggle.com/competitions/digit-recognizer
+<img src="https://media.geeksforgeeks.org/wp-content/uploads/Screenshot-from-2017-08-15-17-04-02.png" width=500>
 
-$1 \times 28 \times 28$ 灰度图输入
+这样的操作可以直接让感受野翻 $k$ 倍，超级赚。
 
-TODO:
+这个过程称作**池化 (Pooling)**。和卷积层一样，池化层在格子不够的时候也会直接丢弃。
 
+由于池化丢弃了信息，因此它属于**下采样 (Downsampling)** 的一种。
+
+# Python 实现
+
+在 PyTorch 中，这些层被称为：
+- 卷积层 `Conv2d(in_channels, out_channels, kernel_size, stride=1, padding=0)`
+- 池化层 `MaxPool2d(kernel_size)`
+
+## 实践：MNIST
+
+> [Digit Recognizer](https://www.kaggle.com/competitions/digit-recognizer)
+>
+> 给定一张 $1 \times 28 \times 28$ 的灰度图，图中写了一个 $0$ 到 $9$ 之间的数字。识别这个数字。
+
+我们可以设计一个这样的卷积神经网络（CNN）：
+
+| 操作 | $C \times H \times W$ |
+| - | - |
+| Input | $1 \times 28 \times 28$ |
+| `Conv1` | $32 \times 28 \times 28$ |
+| `Pool1` | $32 \times 14 \times 14$ |
+| `Conv2` | $64 \times 14 \times 14$ |
+| `Pool2` | $64 \times 7 \times 7$ |
+| `View` | $3136$ |
+| `FC1` | $128$ |
+| `FC2` | $10$ |
+
+
+```py
+class MNISTCNN(nn.Module):
+    def __init__(self):
+        super().__init__()
+
+        self.conv = nn.Sequential(
+            nn.Conv2d(1, 32, kernel_size=3, padding=1),
+            nn.ReLU(),
+            nn.MaxPool2d(2, 2),
+
+            nn.Conv2d(32, 64, kernel_size=3, padding=1),
+            nn.ReLU(),
+            nn.MaxPool2d(2, 2),
+
+            nn.Flatten()
+        )
+
+        self.classifier = nn.Sequential(
+            nn.Linear(64 * 7 * 7, 128),
+            nn.ReLU(),
+            nn.Linear(128, 10)
+        )
+
+    def forward(self, x):
+        x = self.conv(x)
+        x = self.classifier(x)
+        return x
+```
